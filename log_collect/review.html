@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        //写cookie key=value
+        document.cookie = "uuid=123:expires=";
+        document.cookie = "sid=342";
+        document.cookie = "mid=978";
+        //获取cookie数据
+        console.log(document.cookie);
+
+        //js 定义一个对象
+        var student ={
+            id:9897,
+            name:"华安",
+            say:function () {
+                alert("汪汪叫....")
+
+            },
+            girlFriend:{name:"秋香"},
+            habbit:["美女","作诗"]};
+        //获取属性值
+       console.log("id="+student["id"]) ;
+       console.log("name="+student.name);
+       student.say()
+       console.log("girlFriend name="+student.girlFriend.name);
+       console.log("habbit:"+ student.habbit[0])
+        //给实例对象动态添加属性
+        student.age =12
+        alert(student.age)
+        //遍历对象的属性和属性值
+        for(key in student){
+           console.log(key+"="+student[key])
+        }
+        document.getElementById("dv")
+
+    </script>
+</head>
+<body>
+<div id="dv"></div>
+<img src="">
+
+</body>
+</html>
